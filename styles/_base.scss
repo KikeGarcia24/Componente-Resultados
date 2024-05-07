@@ -1,0 +1,31 @@
+/*Colores*/
+$bgResults:linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);
+$txtColorResults: #ffffff;
+$txtNoFocus:hsl(241, 100%, 89%);
+$txtReaction:hsl(0, 100%, 67%);
+$bgReaction:#FFF6F5;
+$txtMemory:hsl(39, 100%, 56%);
+$bgMemory:#FFFBF2;
+$txtVerbal:hsl(166, 100%, 37%);
+$bgVerbal:#F2FBFA;
+$txtVisual:hsl(234, 85%, 45%);
+$bgVisual:#F3F3FD;
+$txtSummary:#363D51;
+$shadowSummary:#F4F7FE;
+$btnColor:#303B59;
+$btnHover:linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);
+
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Mixins de media queries*/
+@mixin breakpoint(){
+    @media screen and (max-width:482px) {
+        @content
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

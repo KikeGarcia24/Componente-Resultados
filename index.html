@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Componente de resumen de resultados</title>
 </head>
 <body>
   <main>
-    
+    <article class="cards__container">
+      <section class="card__results">
+        <h1>Tus Resultados</h1>
+        <div class="results__circle">
+          <p id="total">76</p>
+          <p id="topScore">de 100</p>
+        </div>
+        <h2>Excelente</h2>
+        <p>Lo hiciste mejor que el 65% de las personas que tomaron este test</p>
+      </section>
+      <section class="card__summary">
+        <h1>Resumen</h1>
+        <div class="content__summ reaction__container">
+          <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
+          <p id="reaction">Reacción</p>
+          <span><b>80 </b> / 100</span>
+        </div>
+
+        <div class="content__summ memory__container">
+          <img src="./assets/images/icon-memory.svg" alt="Memory Icon">
+          <p id="memory">Memoria</p>
+          <span><b>92 </b> / 100</span>
+        </div>
+
+        <div class="content__summ verbal__container">
+          <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon">
+          <p id="verbal">Verbal</p>
+          <span><b>61 </b> / 100</span>
+        </div>
+
+        <div class="content__summ visual__container">
+          <img src="./assets/images/icon-visual.svg" alt="Visual Icon">
+          <p id="visual">Visual</p>
+          <span><b>72 </b> / 100</span>
+        </div>
+
+        <div class="btn__continue">Continuar</div>
+      </section>
+    </article>
   </main>
 </body>
 </html>

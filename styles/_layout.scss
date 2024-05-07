@@ -1,0 +1,14 @@
+main{
+    font-family: "Hanken Grotesk", sans-serif;
+
+    .cards__container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint(){
+            flex-direction: column;
+        }
+    }
+}

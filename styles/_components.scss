@@ -1,0 +1,148 @@
+.card__results{
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    background: $bgResults;
+    border-radius: 30px;
+    @include breakpoint(){
+        width: 100vw;
+        height: 50vh;
+        border-radius: 0 0 30px 30px;
+    }
+    >h1{
+        color: $txtNoFocus;
+        font-size: 1rem;
+    }
+    .results__circle{
+        background: $bgResults;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        align-content: center;
+        border-radius: 50%;
+        box-shadow: 1px 38px 47px 0px rgba(0, 0, 0, 0.277) inset;
+
+        #total{
+            color: $txtColorResults;
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        #topScore{
+            color: $txtNoFocus;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    >h2{
+        color: $txtColorResults;
+    }
+    >p{
+        color: $txtNoFocus;
+        margin: 0 2rem 1rem 2rem;
+    }
+}
+
+.card__summary{
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    box-shadow: 23px 20px 12px 0px rgba(244,247,254,0.75);
+    @include breakpoint(){
+        width: 100vw;
+        height: 50vh;
+    }
+    >h1{
+        text-align: left;
+        margin-left: 1.5rem;
+        color: $txtSummary;
+    }
+
+    .reaction__container{
+        background-color: $bgReaction;
+        
+    }
+    .memory__container{
+        background-color: $bgMemory;
+    }
+    .verbal__container{
+        background-color: $bgVerbal;
+    }
+    .visual__container{
+        background-color: $bgVisual;
+    }
+
+    .content__summ{
+        width: 197px;
+        height: 42px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        @include breakpoint(){
+            width: 80vw;
+        }
+
+        #reaction,#memory{
+            margin-left: -1rem;
+            margin-right: .5rem;
+            font-weight: 700;
+            @include breakpoint(){
+                margin-left: -3rem;
+            }
+        }
+        #verbal,#visual{
+            margin-left: -1.5rem;
+            margin-right: .5rem;
+            font-weight: 700;
+            @include breakpoint(){
+                margin-left: -3.5rem;
+                margin-right: 2rem;
+            }
+        }
+        #reaction{
+            color: $txtReaction;
+        }
+        #memory{
+            color: $txtMemory;
+        }
+        #verbal{
+            color: $txtVerbal;
+        }
+        #visual{
+            color: $txtVisual;
+        }
+
+        >span{
+            color: $txtNoFocus;
+            font-weight: 600;
+            >b{
+                color: $txtSummary;
+            }
+        }
+    }
+    .btn__continue{
+        background-color: $btnColor;
+        color: $txtColorResults;
+        width: 198px;
+        height: 40px;
+        align-content: center;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: 0 auto;
+        transition: all .25s ease;
+
+        &:hover{
+            background: $btnHover;
+        }
+    }
+}

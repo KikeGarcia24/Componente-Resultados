@@ -1,0 +1,176 @@
+/*Colores*/
+/*Fuente*/
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+/*Mixins de media queries*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+main .cards__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 482px) {
+  main .cards__container {
+    flex-direction: column;
+  }
+}
+
+.card__results {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  background: linear-gradient(0deg, rgb(46, 43, 233) 0%, rgb(120, 87, 255) 100%);
+  border-radius: 30px;
+}
+@media screen and (max-width: 482px) {
+  .card__results {
+    width: 100vw;
+    height: 50vh;
+    border-radius: 0 0 30px 30px;
+  }
+}
+.card__results > h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+}
+.card__results .results__circle {
+  background: linear-gradient(0deg, rgb(46, 43, 233) 0%, rgb(120, 87, 255) 100%);
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  align-content: center;
+  border-radius: 50%;
+  box-shadow: 1px 38px 47px 0px rgba(0, 0, 0, 0.277) inset;
+}
+.card__results .results__circle #total {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.card__results .results__circle #topScore {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.card__results > h2 {
+  color: #ffffff;
+}
+.card__results > p {
+  color: hsl(241, 100%, 89%);
+  margin: 0 2rem 1rem 2rem;
+}
+
+.card__summary {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  box-shadow: 23px 20px 12px 0px rgba(244, 247, 254, 0.75);
+}
+@media screen and (max-width: 482px) {
+  .card__summary {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+.card__summary > h1 {
+  text-align: left;
+  margin-left: 1.5rem;
+  color: #363D51;
+}
+.card__summary .reaction__container {
+  background-color: #FFF6F5;
+}
+.card__summary .memory__container {
+  background-color: #FFFBF2;
+}
+.card__summary .verbal__container {
+  background-color: #F2FBFA;
+}
+.card__summary .visual__container {
+  background-color: #F3F3FD;
+}
+.card__summary .content__summ {
+  width: 197px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 482px) {
+  .card__summary .content__summ {
+    width: 80vw;
+  }
+}
+.card__summary .content__summ #reaction, .card__summary .content__summ #memory {
+  margin-left: -1rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 482px) {
+  .card__summary .content__summ #reaction, .card__summary .content__summ #memory {
+    margin-left: -3rem;
+  }
+}
+.card__summary .content__summ #verbal, .card__summary .content__summ #visual {
+  margin-left: -1.5rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 482px) {
+  .card__summary .content__summ #verbal, .card__summary .content__summ #visual {
+    margin-left: -3.5rem;
+    margin-right: 2rem;
+  }
+}
+.card__summary .content__summ #reaction {
+  color: hsl(0, 100%, 67%);
+}
+.card__summary .content__summ #memory {
+  color: hsl(39, 100%, 56%);
+}
+.card__summary .content__summ #verbal {
+  color: hsl(166, 100%, 37%);
+}
+.card__summary .content__summ #visual {
+  color: hsl(234, 85%, 45%);
+}
+.card__summary .content__summ > span {
+  color: hsl(241, 100%, 89%);
+  font-weight: 600;
+}
+.card__summary .content__summ > span > b {
+  color: #363D51;
+}
+.card__summary .btn__continue {
+  background-color: #303B59;
+  color: #ffffff;
+  width: 198px;
+  height: 40px;
+  align-content: center;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.25s ease;
+}
+.card__summary .btn__continue:hover {
+  background: linear-gradient(0deg, rgb(46, 43, 233) 0%, rgb(120, 87, 255) 100%);
+}/*# sourceMappingURL=main.css.map */
